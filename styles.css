@@ -1,0 +1,58 @@
+.container {
+    background-color: gray;
+    height: 500px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.square1 {
+    background-color: red;
+    width: 250px;
+    height: 150px;
+    animation-name: colorchange;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.square2 {
+    background-color: green;
+    width: 250px;
+    height: 125px;
+    transform: rotate(48deg);
+}
+
+.square3 {
+    background-color: yellow;
+    width: 250px;
+    height: 150px;
+    transition: .5s;
+}
+
+.square3:hover {
+    background-color: red;
+}
+
+@keyframes colorchange {
+    0% {
+        background-color: red;
+    }
+
+    25% {
+        background-color: black;
+    }
+
+    50% {
+        background-color: aqua;
+    }
+
+    75% {
+        background-color: navy;
+    }
+
+    100% {
+        background-color: brown;
+    }
+}
